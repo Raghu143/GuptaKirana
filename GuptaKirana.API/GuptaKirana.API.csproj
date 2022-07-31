@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>D:\Gupta Project\GuptaKirana.API\GuptaKirana.API\GuptaKirana.API.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.27" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.27" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GuptaKirana.EFCore\GuptaKirana.EFCore.csproj" />
+    <ProjectReference Include="..\GuptaKirana.Models\GuptaKirana.Models.csproj" />
+    <ProjectReference Include="..\GuptaKirana.Repository\GuptaKirana.Repository.csproj" />
+    <ProjectReference Include="..\GuptaKirana.Services\GuptaKirana.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>
